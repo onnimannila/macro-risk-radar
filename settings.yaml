@@ -1,0 +1,39 @@
+app_name: "Morning Macro-Financial Risk Monitor"
+timezone: "Europe/Helsinki"
+base_currency: "EUR"
+report_time: "07:30"
+history_start: "2015-01-01"
+output_directory: "output"
+cache_dir: ".cache"
+raw_directory: "data/raw"
+processed_directory: "data/processed"
+pdf_page_size: "A4"
+pdf_orientation: "landscape"
+minimum_history_for_zscore: 252
+default_zscore_window: 756
+default_volatility_window: 60
+max_news_items: 5
+max_summary_bullets: 5
+http_timeout_seconds: 15
+http_max_retries: 3
+deribit_volatility_surface:
+  enabled: true
+  currency: "BTC"
+  kind: "option"
+  minimum_days_to_expiry: 7
+  maximum_days_to_expiry: 365
+  minimum_expiries: 4
+  minimum_quotes_per_expiry: 7
+  preferred_quotes_per_expiry: 15
+  minimum_total_quotes: 80
+  minimum_open_interest: 0
+  minimum_volume: 0
+  forward_moneyness_min: 0.60
+  forward_moneyness_max: 1.40
+  maximum_relative_bid_ask_spread: 0.50
+  maximum_mark_mid_deviation: 0.30
+  minimum_iv_pct: 5.0
+  maximum_iv_pct: 300.0
+  maximum_data_age_minutes: 30
+  use_mark_iv: true
+  cache_ttl_minutes: 10

@@ -1,0 +1,29 @@
+daily_zscore:
+  amber: 1.5
+  red: 2.5
+
+rates_move_bp:
+  amber: 8.0
+  red: 15.0
+
+sovereign_spread_move_bp:
+  amber: 4.0
+  red: 8.0
+
+credit_spread_move_bp:
+  amber: 8.0
+  red: 18.0
+
+equity_return_pct:
+  amber: 1.2
+  red: 2.5
+
+fx_return_pct:
+  amber: 0.8
+  red: 1.8
+
+plausibility:
+  max_equity_daily_move_pct: 25.0
+  max_rates_daily_move_bp: 100.0
+  max_credit_daily_move_bp: 300.0
+  max_fx_daily_move_pct: 10.0

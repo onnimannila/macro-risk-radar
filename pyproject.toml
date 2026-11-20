@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morning-macro-report"
+version = "1.0.0"
+description = "Automated Morning Macro-Financial Risk Monitor for Pension Investment Risk Teams"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "scipy>=1.12.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.0",
+    "pyyaml>=6.0.1",
+    "httpx>=0.27.0",
+    "tenacity>=8.2.3",
+    "pandas-market-calendars>=4.3.3",
+    "matplotlib>=3.8.3",
+    "jinja2>=3.1.3",
+    "weasyprint>=61.1",
+    "feedparser>=6.0.11",
+    "pyarrow>=15.0.0",
+    "typer>=0.9.0",
+    "structlog>=24.1.0",
+    "python-dateutil>=2.8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+    "pip-audit>=2.7.0"
+]
+
+[project.scripts]
+morning-report = "morning_report.cli:app"
+
+[tool.setuptools]
+packages = ["morning_report"]
+
+[tool.setuptools.package-dir]
+morning_report = "."
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "test.py"]
+addopts = "-v --tb=short"
+markers = [
+    "integration: requires external network or live data provider access",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true

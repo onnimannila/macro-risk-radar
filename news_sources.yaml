@@ -1,0 +1,28 @@
+feeds:
+  - id: "ecb_press"
+    name: "European Central Bank"
+    url: "https://www.ecb.europa.eu/rss/press.html"
+    category: "Central Bank"
+    authority_weight: 1.0
+    enabled: true
+
+  - id: "bof_news"
+    name: "Bank of Finland"
+    url: "https://www.suomenpankki.fi/en/rss/press-releases/"
+    category: "Central Bank"
+    authority_weight: 0.95
+    enabled: true
+
+  - id: "fed_press"
+    name: "Federal Reserve"
+    url: "https://www.federalreserve.gov/feeds/press_all.xml"
+    category: "Central Bank"
+    authority_weight: 1.0
+    enabled: true
+
+relevance_keywords:
+  - "rate"
+  - "inflation"
+  - "yield"
+  - "spread"
+  - "financial stability"

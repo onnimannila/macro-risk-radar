@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Testing and Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local Secrets & Configurations
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Operating System & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime Caching and Execution Artifacts
+.cache/
+cache/
+data/cache/
+data/raw/
+data/processed/
+output/
+diagnostics/
+logs/
+*.log
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak

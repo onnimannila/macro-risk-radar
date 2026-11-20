@@ -1,0 +1,378 @@
+series:
+  # =========================================================================
+  # MONEY MARKET & OVERNIGHT BENCHMARKS
+  # =========================================================================
+  - id: "ESTR_RATE"
+    display_name: "€STR Overnight Rate"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "EST.B.EU000A2X2A25.WT"
+    unit: "pct"
+    country: "EA"
+    currency: "EUR"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  # =========================================================================
+  # GERMANY SOVEREIGN YIELD CURVE (ECB AAA BENCHMARK CURVE - DE BUND)
+  # =========================================================================
+  - id: "DE_3M_YIELD"
+    display_name: "German Bund 3M Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_3M"
+    unit: "pct"
+    country: "DE"
+    tenor: "3M"
+    tenor_years: 0.25
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_6M_YIELD"
+    display_name: "German Bund 6M Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_6M"
+    unit: "pct"
+    country: "DE"
+    tenor: "6M"
+    tenor_years: 0.50
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_1Y_YIELD"
+    display_name: "German Bund 1Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_1Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "1Y"
+    tenor_years: 1.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_2Y_YIELD"
+    display_name: "German Bund 2Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_2Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "2Y"
+    tenor_years: 2.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_3Y_YIELD"
+    display_name: "German Bund 3Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_3Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "3Y"
+    tenor_years: 3.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_5Y_YIELD"
+    display_name: "German Bund 5Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_5Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "5Y"
+    tenor_years: 5.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_7Y_YIELD"
+    display_name: "German Bund 7Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_7Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "7Y"
+    tenor_years: 7.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_10Y_YIELD"
+    display_name: "German Bund 10Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_10Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "10Y"
+    tenor_years: 10.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_15Y_YIELD"
+    display_name: "German Bund 15Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_15Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "15Y"
+    tenor_years: 15.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_20Y_YIELD"
+    display_name: "German Bund 20Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_20Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "20Y"
+    tenor_years: 20.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "DE_30Y_YIELD"
+    display_name: "German Bund 30Y Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "YC.B.U2.EUR.4F.G_N_A.SV_C_YM.PY_30Y"
+    unit: "pct"
+    country: "DE"
+    tenor: "30Y"
+    tenor_years: 30.0
+    curve_group: "DE_BUND"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  # =========================================================================
+  # FINNISH BENCHMARK / CONVERGENCE BOND YIELD
+  # Note: IRS.M.FI is monthly convergence yield (Maastricht criteria).
+  # =========================================================================
+  - id: "FI_10Y_YIELD"
+    display_name: "Finland 10Y Benchmark Yield"
+    asset_class: "rates"
+    provider: "ecb"
+    provider_series_id: "FM.B.FI.EUR.4F.BB.U2_10Y.YLD"
+    unit: "pct"
+    country: "FI"
+    tenor: "10Y"
+    tenor_years: 10.0
+    curve_group: "FI_GOVT"
+    currency: "EUR"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 5
+    enabled: true
+
+  # =========================================================================
+  # US TREASURY YIELD CURVE (FRED CONSTANT MATURITY)
+  # =========================================================================
+  - id: "US_3M_YIELD"
+    display_name: "US Treasury 3M Yield"
+    asset_class: "rates"
+    provider: "fred"
+    provider_series_id: "DGS3MO"
+    unit: "pct"
+    country: "US"
+    tenor: "3M"
+    tenor_years: 0.25
+    curve_group: "US_TREASURY"
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "US_2Y_YIELD"
+    display_name: "US Treasury 2Y Yield"
+    asset_class: "rates"
+    provider: "fred"
+    provider_series_id: "DGS2"
+    unit: "pct"
+    country: "US"
+    tenor: "2Y"
+    tenor_years: 2.0
+    curve_group: "US_TREASURY"
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "US_5Y_YIELD"
+    display_name: "US Treasury 5Y Yield"
+    asset_class: "rates"
+    provider: "fred"
+    provider_series_id: "DGS5"
+    unit: "pct"
+    country: "US"
+    tenor: "5Y"
+    tenor_years: 5.0
+    curve_group: "US_TREASURY"
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "US_10Y_YIELD"
+    display_name: "US Treasury 10Y Yield"
+    asset_class: "rates"
+    provider: "fred"
+    provider_series_id: "DGS10"
+    unit: "pct"
+    country: "US"
+    tenor: "10Y"
+    tenor_years: 10.0
+    curve_group: "US_TREASURY"
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  - id: "US_30Y_YIELD"
+    display_name: "US Treasury 30Y Yield"
+    asset_class: "rates"
+    provider: "fred"
+    provider_series_id: "DGS30"
+    unit: "pct"
+    country: "US"
+    tenor: "30Y"
+    tenor_years: 30.0
+    curve_group: "US_TREASURY"
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  # =========================================================================
+  # EQUITIES
+  # Note: market_data provider requires external license configuration.
+  # Disabled by default until a permitted data source is hooked up.
+  # =========================================================================
+  - id: "EQ_EUROPE_600"
+    display_name: "STOXX Europe 600"
+    asset_class: "equities"
+    provider: "market_data"
+    provider_series_id: "EXSA.DE"
+    unit: "price"
+    currency: "EUR"
+    transformation: "pct_change"
+    expected_release_lag: 1
+    stale_after_days: 3
+    is_proxy: true
+    enabled: false
+
+  - id: "EQ_SP500"
+    display_name: "S&P 500 Index"
+    asset_class: "equities"
+    provider: "fred"
+    secondary_provider: "yfinance"
+    provider_series_id: "SP500"
+    unit: "index"
+    currency: "USD"
+    transformation: "pct_change"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
+
+  # =========================================================================
+  # CREDIT SPREADS (ICE BofA OAS)
+  # =========================================================================
+  - id: "US_HY_OAS"
+    display_name: "US Corporate HY OAS"
+    asset_class: "credit"
+    provider: "fred"
+    provider_series_id: "BAMLH0A0HYM2"
+    unit: "pct"
+    is_in_basis_points: false
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    higher_is_riskier: true
+    enabled: true
+
+  - id: "US_IG_OAS"
+    display_name: "US Corporate IG OAS"
+    asset_class: "credit"
+    provider: "fred"
+    provider_series_id: "BAMLC0A0CM"
+    unit: "pct"
+    is_in_basis_points: false
+    currency: "USD"
+    transformation: "diff_bp"
+    expected_release_lag: 1
+    stale_after_days: 3
+    higher_is_riskier: true
+    enabled: true
+
+  # =========================================================================
+  # VOLATILITY & FX
+  # =========================================================================
+  - id: "VIX_INDEX"
+    display_name: "CBOE Volatility Index (VIX)"
+    asset_class: "volatility"
+    provider: "fred"
+    secondary_provider: "yfinance"
+    provider_series_id: "VIXCLS"
+    unit: "index"
+    currency: "USD"
+    transformation: "pct_change"
+    expected_release_lag: 1
+    stale_after_days: 3
+    higher_is_riskier: true
+    enabled: true
+
+  - id: "FX_EURUSD"
+    display_name: "EUR / USD Reference Rate"
+    asset_class: "fx"
+    provider: "ecb"
+    provider_series_id: "EXR.D.USD.EUR.SP00.A"
+    unit: "ratio"
+    currency: "USD"
+    transformation: "pct_change"
+    expected_release_lag: 1
+    stale_after_days: 3
+    enabled: true
